@@ -8,4 +8,5 @@
 	    (t
 	     (format t "Round ~a: Tails~%" (+ i 1))
 	     (setf tail (+ tail 1)))))
-      (format t "Heads: ~a, Tails: ~a~%" head tail)))
+    (format t "Heads: ~a, Tails: ~a~%" head tail)
+    (if (> head tail) (format t "You won!~%") (format t "You lose.~%"))))
